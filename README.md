@@ -1,5 +1,5 @@
 
-[![passworth cli](https://github.com/nfinit3/pgen/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/pgen/actions/workflows/npm-publish.yml)
+[![passworth cli](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml)
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts")
 
 

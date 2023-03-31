@@ -1,5 +1,5 @@
 {
-    "name": "pwdgen",
+    "name": "passworth",
     "version": "1.0.0",
     "description": "Random Password Generator CLI",
     "main": "index.js",
@@ -19,6 +19,7 @@
         "random-password-generator",
         "password-cli",
         "pwdgen",
+        "passworth",
         "pwsd-gen",
         "pwgen"
     ],
@@ -28,7 +29,7 @@
         "yargs": "^17.7.1"
     },
     "bin": {
-        "pwdgen": "./index.js"
+        "passworth": "./index.js"
     },
     "devDependencies": {
         "chai": "^4.3.7",

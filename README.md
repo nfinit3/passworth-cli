@@ -1,5 +1,5 @@
-[![Node.js Package](https://github.com/nfinit3/pwdgen/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/pwdgen/actions/workflows/npm-publish.yml)
-# pwdgen
+[![Node.js Package](https://github.com/nfinit3/passworth/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/passworth/actions/workflows/npm-publish.yml)
+# passworth
 
 This is a command-line interface (CLI) tool for generating passwords with customizable settings. This tool was built using Node.js and the yargs package for parsing command-line arguments.
 
@@ -8,13 +8,13 @@ This is a command-line interface (CLI) tool for generating passwords with custom
 ### Instalation
 
 ```bash
-npm i pwdgen -g
+npm i passworth -g
 ```
 
 ### Usage
 
 ```bash
-pwdgen [options]
+passworth [options]
 ```
 
 Options:
@@ -28,7 +28,7 @@ Options:
 Example:
 
 ```bash
-pwdgen -l 16 -n false
+passworth -l 16 -n false
 ```
 
 This will generate a random password of 16 characters length and no numbers and copy the same to clipboard.

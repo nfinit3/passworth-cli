@@ -1,5 +1,5 @@
 {
-    "name": "passworth",
+    "name": "passworth-cli",
     "version": "1.0.0",
     "description": "Random Password Generator CLI",
     "main": "index.js",

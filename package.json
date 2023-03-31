@@ -1,5 +1,5 @@
 {
-    "name": "pgen",
+    "name": "pwdgen",
     "version": "1.0.0",
     "description": "Random Password Generator CLI",
     "main": "index.js",
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/nfinit3/pgen.git"
+        "url": "https://github.com/nfinit3/pwdgen.git"
     },
     "keywords": [
         "password",
@@ -18,7 +18,7 @@
         "pswd",
         "random-password-generator",
         "password-cli",
-        "pgen",
+        "pwdgen",
         "pwsd-gen",
         "pwgen"
     ],
@@ -28,7 +28,7 @@
         "yargs": "^17.7.1"
     },
     "bin": {
-        "pgen": "./index.js"
+        "pwdgen": "./index.js"
     },
     "devDependencies": {
         "chai": "^4.3.7",

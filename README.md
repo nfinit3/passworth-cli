@@ -10,7 +10,7 @@ This is a command-line interface (CLI) tool for generating passwords with custom
 ### Instalation
 
 ```bash
-npm i passworth -g
+npm i passworth-cli -g
 ```
 
 ### Usage

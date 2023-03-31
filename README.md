@@ -1,5 +1,5 @@
-[![Node.js Package](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/passworth/actions/workflows/npm-publish.yml)
-# passworth
+
+# passworth-cli
 
 This is a command-line interface (CLI) tool for generating passwords with customizable settings. This tool was built using Node.js and the yargs package for parsing command-line arguments.
 

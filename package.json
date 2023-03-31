@@ -1,0 +1,26 @@
+{
+    "name": "pgen",
+    "version": "1.0.0",
+    "description": "Random Password Generator CLI",
+    "main": "index.js",
+    "keywords": [
+        "password",
+        "password-generator",
+        "generator",
+        "cli",
+        "pswd",
+        "random-password-generator",
+        "password-cli",
+        "pgen",
+        "pwsd-gen",
+        "pwgen"
+    ],
+    "author": "Vikram Mudaliar",
+    "license": "MIT",
+    "dependencies": {
+        "yargs": "^17.7.1"
+    },
+    "bin": {
+        "pgen": "./index.js"
+    }
+}

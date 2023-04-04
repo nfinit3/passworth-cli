@@ -50,7 +50,27 @@ npm i passworth-cli --save
 
 ```javascript
 import { passworth } from 'passworth-cli';
-passworth(); // => 'AY[5c[=K0MaD'
+const password = passworth(); //Generates a Random password with all paramaeters as True and length of 12 => 'AY[5c[=K0MaD'
+```
+
+With Paramaters
+
+```javascript
+import { passworth } from 'passworth-cli';
+const password = passworth(16, true, false, false); //Generates a Random password of 16 Chars with numbers and lowercases and no Special Characters or UpperCase => 'n3g1kacfqdv2owta'
+```
+
+You can also provide options using JSON format
+
+```javascript
+import { passworth } from 'passworth-cli';
+const options = {
+    length: 4,
+    numbers: false,
+    symbols: true,
+    uppercase: true,
+};
+const password = passworth(options); //Generates a Random password of 4 Chars with no digits => 'Qb]p'
 ```
 
 ### License

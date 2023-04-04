@@ -18,12 +18,11 @@ function generatePassword(
 
     if (typeof length === 'object') {
         let params = length;
-        length = params.length ? params.length : 12;
-        numbers = params.numbers ? params.numbers : true;
-        uppercase = params.uppercase ? params.uppercase : true;
-        special = params.special ? params.special : true;
+        length = params.length !== undefined ? params.length : 12;
+        numbers = params.numbers !== undefined ? params.numbers : true;
+        uppercase = params.uppercase !== undefined ? params.uppercase : true;
+        special = params.special !== undefined ? params.special : true;
     }
-
     if (numbers) {
         randomPasswordArray.push(getRandomCharacter(digits));
         allChars += digits;

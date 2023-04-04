@@ -5,8 +5,151 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Passworth - CLI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                background: #bc4e9c; /* fallback for old browsers */
+                background: -webkit-linear-gradient(
+                    to right,
+                    #f80759,
+                    #bc4e9c
+                ); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    #f80759,
+                    #bc4e9c
+                ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+            body {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: #bc4e9c; /* fallback for old browsers */
+                background: -webkit-linear-gradient(
+                    to right,
+                    #f80759,
+                    #bc4e9c
+                ); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(
+                    to right,
+                    #f80759,
+                    #bc4e9c
+                ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 10px;
+            }
+            p {
+                font-size: 24px;
+                color: #ffffffaf;
+                margin: 5px;
+            }
+            main {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                flex: 1;
+            }
+            button {
+                background: transparent;
+                border-radius: 34px;
+                font-size: 24px;
+                padding: 12px 50px;
+                margin: 30px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #fff;
+                border: 3px solid #fff;
+                outline: 0;
+                transition: all 0.3s;
+            }
+            button:hover {
+                cursor: pointer;
+                background: #ffffff;
+                color: #e9246a;
+                border-color: #e9246a;
+                transition: all 0.3s;
+            }
+            h2 {
+                font-size: 42px;
+                font-family: monospace;
+                font-weight: bold;
+                background: #ffffff30;
+                padding: 16px;
+                width: 50vw;
+                color: #ffffff;
+                border-radius: 8px;
+                border: 2px solid #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            footer {
+                color: #ffffff;
+                margin: 10px;
+            }
+
+            a {
+                color: #ffc556;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        </style>
     </head>
+
     <body>
-        <h1>Demo Coming Soon</h1>
+        <main>
+            <h1>Welcome to Passworth!</h1>
+            <p>A Simple Random Password Generator</p>
+            <button id="generatePass">Generate</button>
+            <h2 id="passwd">P@ssW0rth</h2>
+        </main>
+        <footer>
+            Made with ❤️ by <a href="https://github.com/nfinit3">nfinit3</a>
+        </footer>
+        <script src="./build/passworth.js"></script>
+        <script>
+            function copyToClipboard(str) {
+                navigator.clipboard
+                    .writeText(str)
+                    .then(() => console.log('Copied to clipboard:', str))
+                    .catch((err) =>
+                        console.error('Error copying to clipboard:', err)
+                    );
+            }
+            const button = document.getElementById('generatePass');
+            const passwd = document.getElementById('passwd');
+            button.addEventListener('click', () => {
+                let passWord = generatePassword();
+                passwd.innerHTML = passWord;
+                copyToClipboard(passWord);
+            });
+        </script>
     </body>
 </html>

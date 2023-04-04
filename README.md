@@ -9,6 +9,10 @@
 
 This is a command-line interface (CLI) tool for generating passwords with customizable settings. This tool was built using Node.js and the yargs package for parsing command-line arguments.
 
+## Demo
+
+[https://nfinit3.github.io/passworth-cli/]
+
 ## Getting Started
 
 ### Installation
@@ -77,9 +81,6 @@ const options = {
 };
 const password = passworth(options); //Generates a Random password of 4 Chars with no digits => 'Qb]p'
 ```
-
-### Demo - Coming Soon
-DEMO - Coming Soon[https://nfinit3.github.io/passworth-cli/]
 
 ### License
 

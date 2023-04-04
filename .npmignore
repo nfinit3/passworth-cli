@@ -4,3 +4,6 @@ package-lock.json
 .gitignore
 index.html
 .vscode
+bundle.js
+build
+index.html

@@ -4,7 +4,8 @@
     "description": "Random Password Generator",
     "main": "index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "mocha",
+        "build": "browserify bundle.js -o ./build/passworth.js"
     },
     "repository": {
         "type": "git",
@@ -32,6 +33,7 @@
         "passworth": "./bin/index.js"
     },
     "devDependencies": {
+        "browserify": "^17.0.0",
         "chai": "^4.3.7",
         "mocha": "^10.2.0",
         "prettier-formatter": "^1.0.3"

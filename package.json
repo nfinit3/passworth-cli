@@ -1,7 +1,7 @@
 {
     "name": "passworth-cli",
-    "version": "2.0.0",
-    "description": "Random Password Generator CLI",
+    "version": "2.1.0",
+    "description": "Random Password Generator",
     "main": "index.js",
     "scripts": {
         "test": "mocha"

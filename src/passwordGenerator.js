@@ -1,4 +1,9 @@
-function generatePassword(length, numbers, uppercase, special) {
+function generatePassword(
+    length = 12,
+    numbers = true,
+    uppercase = true,
+    special = true
+) {
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = uppercaseChars.toLocaleLowerCase();
     const digits = '0123456789';
@@ -10,6 +15,14 @@ function generatePassword(length, numbers, uppercase, special) {
 
     let randomPasswordArray = [getRandomCharacter(lowercaseChars)];
     let allChars = lowercaseChars;
+
+    if (typeof length === 'object') {
+        let params = length;
+        length = params.length ? params.length : 12;
+        numbers = params.numbers ? params.numbers : true;
+        uppercase = params.uppercase ? params.uppercase : true;
+        special = params.special ? params.special : true;
+    }
 
     if (numbers) {
         randomPasswordArray.push(getRandomCharacter(digits));
@@ -37,4 +50,4 @@ function generatePassword(length, numbers, uppercase, special) {
         .join('');
     return randomPassword;
 }
-module.exports = { generatePassword };
+exports.generatePassword = generatePassword;

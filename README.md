@@ -2,9 +2,6 @@
 [![passworth cli](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml)
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts")
 
-
-
-
 # passworth-cli
 
 This is a command-line interface (CLI) tool for generating passwords with customizable settings. This tool was built using Node.js and the yargs package for parsing command-line arguments.
@@ -38,6 +35,23 @@ passworth -l 16 -n false
 ```
 
 This will generate a random password of 16 characters length and no numbers and copy the same to clipboard.
+
+## Use in your NodeJS Project
+
+> passworth-cli also provides you a module to use in your NodeJS projects for generating random passwords on the fly.
+
+### Installation
+
+```bash
+npm i passworth-cli --save
+```
+
+### Usage
+
+```javascript
+import { passworth } from 'passworth-cli';
+passworth(); // => 'AY[5c[=K0MaD'
+```
 
 ### License
 

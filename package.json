@@ -29,10 +29,11 @@
         "yargs": "^17.7.1"
     },
     "bin": {
-        "passworth": "./index.js"
+        "passworth": "./bin/index.js"
     },
     "devDependencies": {
         "chai": "^4.3.7",
         "mocha": "^10.2.0"
-    }
+    },
+    "reveal":true
 }

@@ -33,7 +33,9 @@
     },
     "devDependencies": {
         "chai": "^4.3.7",
-        "mocha": "^10.2.0"
+        "mocha": "^10.2.0",
+        "prettier-formatter": "^1.0.3"
     },
-    "reveal":true
+    "reveal": true,
+    "prettier": "prettier-formatter"
 }

@@ -55,7 +55,7 @@ describe('generatePassword', () => {
         const password = generatePassword({
             length: 16,
             numbers: false,
-            uppercase: false,
+            uppercase: false
         });
         assert.match(password, /[a-z]/);
         assert.notMatch(password, /\d/);

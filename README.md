@@ -8,7 +8,7 @@ This is a command-line interface (CLI) tool for generating passwords with custom
 
 ## Getting Started
 
-### Instalation
+### Installation
 
 ```bash
 npm i passworth-cli -g
@@ -31,7 +31,9 @@ Options:
 Example:
 
 ```bash
-passworth -l 16 -n false
+passworth // Generates a random password with all default options and copies it to clipboard.
+passworth -l 16 -n false // Generates a random password of 16 characters length with no numbers and copies it to clipboard.
+
 ```
 
 This will generate a random password of 16 characters length and no numbers and copy the same to clipboard.

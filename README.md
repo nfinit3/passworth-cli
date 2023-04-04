@@ -1,6 +1,9 @@
-
 [![passworth cli](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nfinit3/passworth-cli/actions/workflows/npm-publish.yml)
-[![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts")
+![NPM](https://img.shields.io/npm/l/passworth-cli)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/passworth-cli)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/nfinit3/passworth-cli)
+![GitHub repo size](https://img.shields.io/github/repo-size/nfinit3/passworth-cli)
+![npm](https://img.shields.io/npm/dw/passworth-cli)
 
 # passworth-cli
 

@@ -78,9 +78,8 @@ const options = {
 const password = passworth(options); //Generates a Random password of 4 Chars with no digits => 'Qb]p'
 ```
 
-### To Do:
-
-A Demo to be added to test the same
+### Demo - Coming Soon
+DEMO - Coming Soon[https://nfinit3.github.io/passworth-cli/]
 
 ### License
 

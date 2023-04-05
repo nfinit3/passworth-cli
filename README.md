@@ -11,7 +11,7 @@ This is a command-line interface (CLI) tool for generating passwords with custom
 
 ## Demo
 
-[https://nfinit3.github.io/passworth-cli/]
+[https://passworth.nfinit3.io/]
 
 ## Getting Started
 

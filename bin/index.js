@@ -39,9 +39,13 @@ const password = generatePassword(
     argv.special
 );
 console.log(password);
-if (copyText(password)) {
-    console.log(`Password is copied to clipboard`);
-}
+copyText(password).then((res, error) => {
+    if (res) {
+        console.log(`Password is copied to clipboard`);
+    } else {
+        console.log('Not Having any clipboard tool in running system');
+    }
+});
 delay(50).then(() => {
     process.exit(); // Then exit the main process
 });

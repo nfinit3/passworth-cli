@@ -42,8 +42,6 @@ console.log(password);
 copyText(password).then((res, error) => {
     if (res) {
         console.log(`Password is copied to clipboard`);
-    } else {
-        console.log('Not Having any clipboard tool in running system');
     }
 });
 delay(50).then(() => {

@@ -27,6 +27,7 @@
     "author": "Vikram Mudaliar",
     "license": "MIT",
     "dependencies": {
+        "node-clip": "^0.1.1",
         "yargs": "^17.7.1"
     },
     "bin": {

@@ -1,4 +1,4 @@
-var exec = require('node-clip');
+const exec = require('node-clip');
 async function copyText(textToCopy = '') {
     if (textToCopy) {
         let clipboard = exec.get(true);
